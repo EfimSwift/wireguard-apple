@@ -9,6 +9,8 @@ public struct InterfaceConfiguration {
     public var addresses = [IPAddressRange]()
     public var listenPort: UInt16?
     public var mtu: UInt16?
+    public let dnsHTTPSURL: URL? // Добавь это
+    public let dnsTLSServerName: String? // Добавь это
     public var dns = [DNSServer]()
     public var dnsSearch = [String]()
 
@@ -30,3 +32,4 @@ extension InterfaceConfiguration: Equatable {
             lhs.dnsSearch == rhs.dnsSearch
     }
 }
+
