@@ -1,9 +1,16 @@
-// SPDX-License-Identifier: MIT
-// Copyright © 2018-2023 WireGuard LLC. All Rights Reserved.
+/* SPDX-License-Identifier: MIT
+ *
+ * Copyright (C) 2018-2023 WireGuard LLC. All Rights Reserved.
+ */
+
+#ifndef WIREGUARDKITC_H
+#define WIREGUARDKITC_H
+
 #include <sys/types.h>
 #include <stdint.h>
 #include "key.h"
 #include "x25519.h"
+#include "wireguard.h"
 
 /* From <sys/kern_control.h> */
 #define CTLIOCGINFO 0xc0644e03UL
@@ -20,5 +27,4 @@ struct sockaddr_ctl {
     u_int32_t   sc_reserved[5];
 };
 
-
-
+#endif /* WIREGUARDKITC_H */

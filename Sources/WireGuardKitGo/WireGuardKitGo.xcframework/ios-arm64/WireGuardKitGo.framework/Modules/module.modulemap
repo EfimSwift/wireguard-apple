@@ -1,0 +1,8 @@
+framework module "WireGuardKitGo" {
+	header "ref.h"
+    header "Wireguardkitgo.objc.h"
+    header "Universe.objc.h"
+    header "WireGuardKitGo.h"
+
+    export *
+}

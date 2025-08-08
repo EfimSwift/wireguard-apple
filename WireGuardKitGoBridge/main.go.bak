@@ -1,0 +1,12 @@
+package main
+
+import (
+    "fmt"
+    wg "wireguard-apple/Sources/WireGuardKitGo"
+)
+
+func main() {
+    greeting := wg.SayHello("ChatGPT")
+    fmt.Println(greeting)
+}
+
